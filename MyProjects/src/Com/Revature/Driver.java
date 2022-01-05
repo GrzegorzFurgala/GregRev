@@ -17,8 +17,22 @@ public class Driver {
 		 //Factorial factorial = new Factorial();
 		 //factorial.factorial(5);
 		
-		 SubString subString = new SubString();		
-		 subString.subString("Lego is awsome", 6);
+		 // SubString subString = new SubString();		
+		 // subString.subString("Lego is awsome", 6);
+		
+		 
+		IfEven number = new IfEven();
+		number.isEven(120);
+		
+		
+		// PalindromList pali = new PalindromList();		 
+		  // pali.palindromes();
+		
+		  // PrimeList prime = new PrimeList();
+		  // prime.prime();
+		 
+		
+		
 		
 		
 		

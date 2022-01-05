@@ -10,7 +10,7 @@ public class SubString
 
 	        char [] myArray = str.toCharArray();  // str i turn into myArray
 
-	        for(int i = 0; i <= idx; i++)        // using for loop,  idx (numbers of loop we get as argument)
+	        for(int i = 0; i < idx; i++)        // using for loop,  idx (numbers of loop we get as argument)
 	        {
 	            result = result  + myArray[i];
 
