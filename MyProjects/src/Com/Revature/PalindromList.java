@@ -26,10 +26,10 @@ public class PalindromList
         
         for(int i = 0; i < wordList.size(); i++)
         {
-            int wordLength = wordList.get(i).length() / 2;   // tutaj mam liczbe znakow do sprawdzenia i z przodu i z tylu
+            int wordLength = wordList.get(i).length() / 2;   // how many characters is to check in front and on the back of every word
             int counter = 0;
 
-            for(int j = 0; j < wordLength; j++ )
+            for(int j = 0; j < wordLength; j++ )				
             {
                 char symbolFront = wordList.get(i).charAt(j);
                 char symbolBack = wordList.get(i).charAt(wordList.get(i).length() - 1 - j);

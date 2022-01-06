@@ -9,7 +9,7 @@ public class PrimeList
 	    {
 	        ArrayList<Integer> primeList = new ArrayList<>();
 
-	        for(int i = 1; i <=100; i++ )
+	        for(int i = 1; i <=100; i++ )					// adding numbers to ArrayList
 	        {
 	            primeList.add(i);
 	        }
@@ -17,17 +17,17 @@ public class PrimeList
 	        int counter = 0;
 	        String result = "";
 
-	        for (int i = 1; i <= primeList.size() - 1; i++)
+	        for (int i = 1; i <= primeList.size() - 1; i++)  
 	        {
-	            for (int j = 1; j <= primeList.get(i); j++)
+	            for (int j = 1; j <= primeList.get(i); j++)  
 	            {
 	                if (i % j == 0)
-	                {
+	                {											
 	                    counter++;
 	                }
 	            }
 
-	            if (counter == 2)
+	            if (counter == 2)			// in "for loop section" I check if the particular number is prime or not
 	            {
 	                result += i + ", ";
 	            }
