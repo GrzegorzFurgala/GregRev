@@ -3,23 +3,32 @@ package bankApp;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+
+
 public class Menu
 {
-
+	private static final Logger logger = LogManager.getLogger(Menu.class);
     String firstlastName;
-    String username;
+    String uName;
     String usernameL;
-    int  password;
+    int  uPassword;
     int passwordL;
     boolean access = true;
 
     public void konto()
      {
-            System.out.println("=======================");
+    		System.out.println("=========================");
+    		System.out.println("Welcome to The Funny Bank");
+    		System.out.println("=========================");
             System.out.println("1) Create new account");
             System.out.println("2) Log into account");
             System.out.println("3) Exit app");
-            System.out.println("=======================");
+            System.out.println("-------------------------");
+            System.out.println("4) Bank Employee");
+            System.out.println("=========================");
 
         int choice = -1;
             do
@@ -36,7 +45,7 @@ public class Menu
                 }
                 if (choice < 1 || choice > 4)
                 {
-                    System.out.println("please select numbers from 1 to 3");
+                    System.out.println("please select numbers from 1 to 4");
                 }
             } while (choice < 1 || choice > 4);
 
@@ -49,38 +58,26 @@ public class Menu
                     System.out.println("Please provide your first name and last name");
                     firstlastName = scanner.nextLine();
                     System.out.println("Please provide your username");
-                    username = scanner.nextLine();
+                    uName = scanner.nextLine();
 
                     try
                     {
                         System.out.println("Please provide your password");
-                        password = scanner.nextInt();
+                        uPassword = scanner.nextInt();
                     }
                     catch(InputMismatchException e)
                     {
                         System.out.println("==================================================");
                         System.out.println("The password should be numerical");
                         System.out.println("Please create your account with numerical password");
-                        System.out.println("==================================================");
+                        System.out.println("==================================================");                                                                             
                         konto();
                     }
 
-                   /*       zapis danych do pliku txt
-                    try
-                   {
-                       PrintWriter zapis = new PrintWriter("nazwa_pliku.txt");
-                       zapis.println(firstlastName+" "+username+" "+password);
-                       zapis.close();
-
-                   }
-                   catch(Exception e)
-                   {
-                       System.out.println(e.getMessage());
-
-                   }*/
-
-
-                    System.out.println("============================================");
+                    LogginSys signIn = new LogginSys();              
+                    signIn.signIn(firstlastName, uName, uPassword);   		
+                                        
+                    System.out.println("=============================================");
                     System.out.println(" You have created your first account");
                     System.out.println(" Log into your account with your credentials");
                     System.out.println("=============================================");
@@ -98,28 +95,36 @@ public class Menu
                     System.out.println("Please provide your password");
                     passwordL = scanner1.nextInt();
 
-                    for(int j = 1; j<=1; j++)
+                    LogginSys signIn1 = new LogginSys();
+                    String a = signIn1.loggIn(usernameL);  // wysylam usernameL wprowadzone przez usera zeby pobrac username z bazy i porownac 
+                    int b = signIn1.loggIn1(usernameL);	   // wysylam usernameL wprowadzone przez usera zeby pobrac password z bazy i porownac 
+                                       
+                    String i = signIn1.username1;                   
+                    int j = signIn1.password1;
+                    
+                    
+                    for(int c = 1; c<=1; c++)
                     {
-                        for(int i = 0; i < username.length(); i++)
+                        for(int d = 0; d < i.length(); d++)
                         {
-                            if (username.charAt(i) == usernameL.charAt(i))
+                            if (i.charAt(d) == usernameL.charAt(d))
                             {
 
 
-                            } else {
+                            } 
+                            else 
+                            {
                                 access = false;
                             }
                         }
 
                     }
-
-                    System.out.println(username);
-
-
-                    if(access == true && password == passwordL)
+					
+						
+                    if(access == true && j == passwordL)
                     {
                         Account acc = new Account();
-                        acc.accMenu(firstlastName);
+                        acc.accMenu(usernameL);   
                     }
                     else
                     {
@@ -127,17 +132,28 @@ public class Menu
                         access = true;
                         konto();
                     }
-
                     break;
+                                
                 case 3:
                     System.out.println("===============================");
                     System.out.println("Thank you for visiting our Bank");
                     System.out.println("===============================");
+                    logger.info("End application");
                     System.exit(0);
+                    break;            
+                case 4:
+
+                                      
+                    
+                	Bank bank = new Bank();
+                	bank.bankMenu();
+                	
+                	break;
+                    
+                    
 
             }
+            
         }
-	
-	
-	
+
 }

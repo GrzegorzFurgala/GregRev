@@ -1,0 +1,13 @@
+2022-01-17 18:47:42.403 [main] INFO  bankApp.Driver - Start application
+2022-01-17 18:48:27.819 [main] INFO  bankApp.LogginSys - Your account balance: 2000
+2022-01-17 18:48:38.298 [main] INFO  bankApp.Account - End application
+2022-01-17 18:52:50.512 [main] INFO  bankApp.Driver - Start application
+2022-01-17 18:53:19.225 [main] INFO  bankApp.LogginSys - Your account balance: 1000
+2022-01-17 18:53:19.770 [main] INFO  bankApp.Account - Deposit: added 5000.0 to the balance
+2022-01-17 18:53:36.704 [main] INFO  bankApp.LogginSys - Your account balance: 6000
+2022-01-17 18:53:38.993 [main] INFO  bankApp.Account - End application
+2022-01-17 18:58:19.587 [main] INFO  bankApp.Driver - Start application
+2022-01-17 18:58:59.460 [main] INFO  bankApp.Account - Transfer. Amount: 1000.0 for account number: 1006
+2022-01-17 18:59:03.010 [main] INFO  bankApp.Account - End application
+2022-01-17 18:59:31.670 [main] INFO  bankApp.Driver - Start application
+2022-01-17 18:59:54.370 [main] INFO  bankApp.Bank - End application
