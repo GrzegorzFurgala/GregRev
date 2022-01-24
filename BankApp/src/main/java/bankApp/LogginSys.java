@@ -8,6 +8,7 @@ import java.sql.Statement;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.postgresql.util.PSQLException;
 
 public class LogginSys extends Menu
 {
@@ -15,12 +16,12 @@ public class LogginSys extends Menu
 	double balance = accBalance(usernameL);
 	String username1;
 	int password1;
+	int id;
 	
 	
 	public void signIn(String firstlastName, String uName, int uPassword ) // store data into database "account"
 	{
-			
-		
+					
 		try
 			{
 				Class.forName("org.postgresql.Driver");				
@@ -31,13 +32,20 @@ public class LogginSys extends Menu
 				Connection connection = DriverManager.getConnection(connectionString,username,password);
 				java.sql.Statement statement = connection.createStatement();
 																
-				ResultSet result = statement.executeQuery("INSERT Into account (firstlastname, username,password) values (\'"+firstlastName+"\' ,\'"+uName+"\', \'"+uPassword+"\')");	
-							
+				ResultSet result = statement.executeQuery("INSERT Into account (firstlastname, username,password, balance) "
+						+ "values (\'"+firstlastName+"\' ,\'"+uName+"\', \'"+uPassword+"\', 100)");	
+						
+				connection.close();
+				
 			}
 			catch(ClassNotFoundException e)	
 			{
 					e.printStackTrace();			
 			}		
+			catch(PSQLException e)
+			{
+				
+			}
 			catch(SQLException e)	
 			{
 					e.printStackTrace();				
@@ -66,6 +74,8 @@ public class LogginSys extends Menu
 				{
 				username1 = result.getString("username");				
 				}
+				
+			connection.close();	
 							
 		}
 		catch(ClassNotFoundException e)	
@@ -102,6 +112,8 @@ public class LogginSys extends Menu
 					password1 = result.getInt("password");
 										
 				}
+				
+				connection.close();
 							
 		}
 		catch(ClassNotFoundException e)	
@@ -115,6 +127,43 @@ public class LogginSys extends Menu
 					
 		return password1;
 	}
+	
+	//-----------------------------accountNumber-----------------------------------------------------------//
+	public int accountNumber(String usernameL) 
+	{
+					
+		try
+		{
+			Class.forName("org.postgresql.Driver");			
+			String connectionString ="jdbc:postgresql://tyke.db.elephantsql.com:5432/usbtquop";
+			String username ="usbtquop";
+			String password ="p4dJLY2wuaue4KEwIdLrbz9dYGh3x6Sn";		
+			Connection connection = DriverManager.getConnection(connectionString,username,password);
+			java.sql.Statement statement = connection.createStatement();
+																		
+				ResultSet result = statement.executeQuery("Select id_account from account WHERE username = \'"+usernameL+"\' ");	
+			
+				while(result.next())
+				{
+					id = result.getInt("id_account");
+										
+				}
+				
+				connection.close();
+							
+		}
+		catch(ClassNotFoundException e)	
+		{
+				e.printStackTrace();			
+		}		
+		catch(SQLException e)	
+		{
+				e.printStackTrace();				
+		}
+					
+		return id;
+	}
+	
 	
 	//------------------------------------------------------------------------------------------------------------------------------------//
 	public double accBalance( String usernameL) //checking balance
@@ -134,10 +183,11 @@ public class LogginSys extends Menu
 			while(result.next())
 			{			
 				balance = result.getInt("balance");
-				System.out.println("Your account balance: "+result.getInt("balance"));
-				
+				System.out.println("Your account balance: "+result.getInt("balance"));				
 			}
-				
+			
+			connection.close();			
+			
 		}
 		catch(ClassNotFoundException e)	
 		{
@@ -154,7 +204,7 @@ public class LogginSys extends Menu
 	//-------------------------------------------------------------------------------------------------------------------------------------------//
 
 	
-	public void deposit(String usernameL, double currentBalance ) // deposit money to ballance
+	public void deposit(String usernameL, double amount ) // deposit money to balance
 	{
 				
 		try
@@ -166,15 +216,19 @@ public class LogginSys extends Menu
 				Connection connection = DriverManager.getConnection(connectionString,username,password);
 				java.sql.Statement statement = connection.createStatement();
 																						
-				ResultSet result = statement.executeQuery("Update account set balance = \'"+currentBalance+"\' WHERE username = \'"+usernameL+"\' ");
+				ResultSet result = statement.executeQuery("Update account set balance = balance + \'"+amount+"\' WHERE username = \'"+usernameL+"\' ");
 				
-								
+				connection.close();					
 				
 			}
 			catch(ClassNotFoundException e)	
 			{
 					e.printStackTrace();			
 			}		
+			catch(PSQLException e)
+			{
+				
+			}
 			catch(SQLException e)	
 			{
 					e.printStackTrace();				
@@ -182,7 +236,7 @@ public class LogginSys extends Menu
 					
 	}
 	
-	public void withdrawal(String usernameL, double currentBalance1 ) // withdraw money from balance
+	public void withdrawal(String usernameL, double amount ) // withdraw money from balance
 	{
 				
 		try
@@ -194,13 +248,18 @@ public class LogginSys extends Menu
 				Connection connection = DriverManager.getConnection(connectionString,username,password);
 				java.sql.Statement statement = connection.createStatement();
 																						
-				ResultSet result = statement.executeQuery("Update account set balance = \'"+currentBalance1+"\' WHERE username = \'"+usernameL+"\' ");
-															
+				ResultSet result = statement.executeQuery("Update account set balance = balance - \'"+amount+"\' WHERE username = \'"+usernameL+"\' ");
+					
+				connection.close();
 			}
 			catch(ClassNotFoundException e)	
 			{
 					e.printStackTrace();			
 			}		
+			catch(PSQLException e)
+			{
+				
+			}
 			catch(SQLException e)	
 			{
 					e.printStackTrace();				
@@ -221,33 +280,26 @@ public class LogginSys extends Menu
 				java.sql.Statement statement = connection.createStatement();
 																						
 				ResultSet result = statement.executeQuery("Update account set balance = balance + \'"+amount+"\' WHERE id_account = \'"+accountNumber+"\' ");
-								
+				
+				connection.close();
 				
 			}
 			catch(ClassNotFoundException e)	
 			{
 					e.printStackTrace();			
 			}		
+			catch(PSQLException e)
+			{
+				
+			}
 			catch(SQLException e)	
 			{
 					e.printStackTrace();				
 			}
+		
 					
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 }

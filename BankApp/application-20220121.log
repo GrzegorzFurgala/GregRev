@@ -1,0 +1,10 @@
+2022-01-21 11:32:35.319 [main] INFO  bankApp.Driver - Start application
+2022-01-21 11:34:10.658 [main] INFO  bankApp.Account - Username: Tom, checking account balance
+2022-01-21 11:34:30.921 [main] INFO  bankApp.Account - Username: Tom, checking account balance
+2022-01-21 11:35:07.211 [main] INFO  bankApp.Account - End application
+2022-01-21 11:38:23.444 [main] INFO  bankApp.Driver - Start application
+2022-01-21 11:39:57.212 [main] INFO  bankApp.Account - Username: Cameron, checking account balance
+2022-01-21 11:40:18.460 [main] INFO  bankApp.Account - End application
+2022-01-21 12:04:24.187 [main] INFO  bankApp.Driver - Start application
+2022-01-21 12:04:43.181 [main] INFO  bankApp.Account - Username: Tom, checking account balance
+2022-01-21 12:04:55.309 [main] INFO  bankApp.Account - End application

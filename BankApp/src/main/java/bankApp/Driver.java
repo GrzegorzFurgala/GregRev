@@ -18,15 +18,7 @@ public class Driver
         menu.konto();
 
         
-    	/*		
-                System.out.println( "Hello, user!" );
-                logger.trace("We've just greeted the user!");
-                logger.debug("We've just greeted the user!");
-                logger.info("We've just greeted the user!");
-                logger.warn("We've just greeted the user!");
-                logger.error("We've just greeted the user!");
-                logger.fatal("We've just greeted the user!");
-         */   
+
 
         
     }	

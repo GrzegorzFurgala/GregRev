@@ -1,0 +1,6 @@
+2022-01-24 14:34:38.959 [main] INFO  bankApp.Driver - Start application
+2022-01-24 14:35:15.259 [main] INFO  bankApp.Bank - Bank Employee: all accounts report
+2022-01-24 14:35:20.102 [main] INFO  bankApp.Bank - Bank Employee: individual accounts report for 1000
+2022-01-24 14:35:38.154 [main] INFO  bankApp.Bank - End application
+2022-01-24 14:35:59.039 [main] INFO  bankApp.Driver - Start application
+2022-01-24 14:36:08.586 [main] INFO  bankApp.Bank - End application

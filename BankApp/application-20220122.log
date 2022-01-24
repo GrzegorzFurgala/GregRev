@@ -1,0 +1,20 @@
+2022-01-22 14:00:15.901 [main] INFO  bankApp.Driver - Start application
+2022-01-22 14:03:44.240 [main] INFO  bankApp.Account - End application
+2022-01-22 14:45:46.246 [main] INFO  bankApp.Driver - Start application
+2022-01-22 15:13:14.535 [main] INFO  bankApp.Driver - Start application
+2022-01-22 15:13:31.532 [main] INFO  bankApp.Account - Username: Greg, transfer: 5000.0 for account number: 1016
+2022-01-22 15:14:45.224 [main] INFO  bankApp.Account - End application
+2022-01-22 15:37:12.013 [main] INFO  bankApp.Driver - Start application
+2022-01-22 15:37:23.501 [main] INFO  bankApp.Bank - End application
+2022-01-22 15:45:58.525 [main] INFO  bankApp.Driver - Start application
+2022-01-22 15:46:52.668 [main] INFO  bankApp.Bank - Bank Admin: all accounts report
+2022-01-22 15:47:04.045 [main] INFO  bankApp.Bank - Bank Admin: individual accounts report for 1000
+2022-01-22 15:47:27.908 [main] INFO  bankApp.Bank - Bank Admin: individual accounts report for 54554545
+2022-01-22 15:56:30.373 [main] INFO  bankApp.Driver - Start application
+2022-01-22 16:07:03.144 [main] INFO  bankApp.Driver - Start application
+2022-01-22 16:07:55.930 [main] INFO  bankApp.Driver - Start application
+2022-01-22 16:23:10.400 [main] INFO  bankApp.Driver - Start application
+2022-01-22 16:23:40.190 [main] INFO  bankApp.Bank - Bank Admin: all accounts report
+2022-01-22 16:24:18.477 [main] INFO  bankApp.Bank - Bank Admin: deposit 1000.0 for account 1020
+2022-01-22 16:24:36.964 [main] INFO  bankApp.Bank - Bank Admin: all accounts report
+2022-01-22 16:24:42.341 [main] INFO  bankApp.Bank - Bank Admin: deletion of account: 3333

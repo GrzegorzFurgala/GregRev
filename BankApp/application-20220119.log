@@ -1,0 +1,17 @@
+2022-01-19 17:47:57.599 [main] INFO  bankApp.Driver - Start application
+2022-01-19 17:48:10.412 [main] INFO  bankApp.Account - Username: Greg, checking account balance
+2022-01-19 17:48:24.424 [main] INFO  bankApp.Account - End application
+2022-01-19 22:27:28.393 [main] INFO  bankApp.Driver - Start application
+2022-01-19 22:30:15.917 [main] INFO  bankApp.Account - Username: Dziwka, checking account balance
+2022-01-19 22:30:35.742 [main] INFO  bankApp.Account - Username: Dziwka, deposit: added 5000.0 to the balance
+2022-01-19 22:30:46.803 [main] INFO  bankApp.Account - Username: Dziwka, checking account balance
+2022-01-19 22:31:03.810 [main] INFO  bankApp.Account - Username: Dziwka, withdrawal: 3722.0
+2022-01-19 22:31:15.118 [main] INFO  bankApp.Account - Username: Dziwka, checking account balance
+2022-01-19 22:32:39.236 [main] INFO  bankApp.Account - Username: Dziwka, transfer: 500.0 for account number: 1000
+2022-01-19 22:33:15.141 [main] INFO  bankApp.Account - Username: Dziwka, checking account balance
+2022-01-19 22:34:44.721 [main] INFO  bankApp.Bank - Bank Admin: all accounts report
+2022-01-19 22:35:30.653 [main] INFO  bankApp.Bank - Bank Admin: individual accounts report for 1010
+2022-01-19 22:36:53.822 [main] INFO  bankApp.Bank - Bank Admin: update, new username Whore for account 1010
+2022-01-19 22:37:06.678 [main] INFO  bankApp.Bank - Bank Admin: all accounts report
+2022-01-19 22:40:49.327 [main] INFO  bankApp.Bank - Bank Employee: all accounts report
+2022-01-19 22:40:51.368 [main] INFO  bankApp.Bank - End application

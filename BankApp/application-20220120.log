@@ -1,0 +1,122 @@
+2022-01-20 10:47:11.473 [main] INFO  bankApp.Driver - Start application
+2022-01-20 10:47:34.879 [main] INFO  bankApp.Bank - Bank Admin: individual accounts report for 1000
+2022-01-20 10:47:49.250 [main] INFO  bankApp.Bank - End application
+2022-01-20 10:47:54.271 [main] INFO  bankApp.Driver - Start application
+2022-01-20 10:48:00.327 [main] INFO  bankApp.Bank - Bank Employee: all accounts report
+2022-01-20 10:48:05.643 [main] INFO  bankApp.Bank - End application
+2022-01-20 10:58:14.828 [main] INFO  bankApp.Driver - Start application
+2022-01-20 10:59:06.601 [main] INFO  bankApp.Bank - Bank Admin: all accounts report
+2022-01-20 10:59:46.114 [main] INFO  bankApp.Bank - End application
+2022-01-20 11:02:51.301 [main] INFO  bankApp.Driver - Start application
+2022-01-20 11:04:14.047 [main] INFO  bankApp.Bank - Bank Admin: transfer 1000.0 from account 1007 into 1010
+2022-01-20 11:04:19.669 [main] INFO  bankApp.Bank - Bank Admin: all accounts report
+2022-01-20 11:04:59.706 [main] INFO  bankApp.Bank - End application
+2022-01-20 11:19:06.546 [main] INFO  bankApp.Driver - Start application
+2022-01-20 11:19:37.327 [main] INFO  bankApp.Bank - Bank Admin: update, new password 12345 for account 1010
+2022-01-20 11:19:46.226 [main] INFO  bankApp.Bank - Bank Admin: all accounts report
+2022-01-20 11:19:55.687 [main] INFO  bankApp.Bank - Bank Admin: individual accounts report for 1010
+2022-01-20 11:20:01.282 [main] INFO  bankApp.Bank - End application
+2022-01-20 11:21:05.212 [main] INFO  bankApp.Driver - Start application
+2022-01-20 11:21:30.903 [main] INFO  bankApp.Bank - Bank Admin: update, new balance 20500.0 for account 1010
+2022-01-20 11:21:56.405 [main] INFO  bankApp.Bank - Bank Employee: all accounts report
+2022-01-20 11:22:01.024 [main] INFO  bankApp.Bank - End application
+2022-01-20 14:15:35.409 [main] INFO  bankApp.Driver - Start application
+2022-01-20 14:16:14.092 [main] INFO  bankApp.Bank - End application
+2022-01-20 14:20:07.528 [main] INFO  bankApp.Driver - Start application
+2022-01-20 14:28:17.797 [main] INFO  bankApp.Driver - Start application
+2022-01-20 14:30:09.071 [main] INFO  bankApp.Driver - Start application
+2022-01-20 14:32:41.435 [main] INFO  bankApp.Driver - Start application
+2022-01-20 14:33:33.613 [main] INFO  bankApp.Driver - Start application
+2022-01-20 14:33:59.488 [main] INFO  bankApp.Driver - Start application
+2022-01-20 14:36:35.907 [main] INFO  bankApp.Driver - Start application
+2022-01-20 14:39:30.248 [main] INFO  bankApp.Driver - Start application
+2022-01-20 14:39:55.409 [main] INFO  bankApp.Driver - Start application
+2022-01-20 14:41:28.757 [main] INFO  bankApp.Driver - Start application
+2022-01-20 14:43:06.080 [main] INFO  bankApp.Driver - Start application
+2022-01-20 14:49:41.126 [main] INFO  bankApp.Driver - Start application
+2022-01-20 14:51:03.486 [main] INFO  bankApp.Driver - Start application
+2022-01-20 14:52:17.403 [main] INFO  bankApp.Driver - Start application
+2022-01-20 14:53:21.159 [main] INFO  bankApp.Driver - Start application
+2022-01-20 14:53:50.932 [main] INFO  bankApp.Bank - End application
+2022-01-20 14:54:21.378 [main] INFO  bankApp.Driver - Start application
+2022-01-20 15:53:03.676 [main] INFO  bankApp.Driver - Start application
+2022-01-20 15:55:00.830 [main] INFO  bankApp.Bank - End application
+2022-01-20 16:13:01.087 [main] INFO  bankApp.Driver - Start application
+2022-01-20 16:13:41.427 [main] INFO  bankApp.Bank - Bank Employee: all accounts report
+2022-01-20 16:18:12.725 [main] INFO  bankApp.Bank - End application
+2022-01-20 16:54:33.680 [main] INFO  bankApp.Driver - Start application
+2022-01-20 16:54:54.568 [main] INFO  bankApp.Account - End application
+2022-01-20 16:57:12.259 [main] INFO  bankApp.Driver - Start application
+2022-01-20 17:00:10.570 [main] INFO  bankApp.Driver - Start application
+2022-01-20 17:01:15.693 [main] INFO  bankApp.Driver - Start application
+2022-01-20 17:56:24.031 [main] INFO  bankApp.Driver - Start application
+2022-01-20 18:04:35.194 [main] INFO  bankApp.Driver - Start application
+2022-01-20 18:04:50.864 [main] INFO  bankApp.Bank - Bank Admin: all accounts report
+2022-01-20 18:05:17.447 [main] INFO  bankApp.Account - Username: Greg, deposit: added 10000.0 to the balance
+2022-01-20 18:05:37.261 [main] INFO  bankApp.Account - Username: Greg, checking account balance
+2022-01-20 18:06:41.300 [main] INFO  bankApp.Account - Username: John, checking account balance
+2022-01-20 18:06:59.167 [main] INFO  bankApp.Account - Username: John, deposit: added 5000.0 to the balance
+2022-01-20 18:07:05.432 [main] INFO  bankApp.Account - Username: John, checking account balance
+2022-01-20 18:07:23.553 [main] INFO  bankApp.Menu - End application
+2022-01-20 18:12:55.174 [main] INFO  bankApp.Driver - Start application
+2022-01-20 18:13:10.605 [main] INFO  bankApp.Account - Username: Greg, checking account balance
+2022-01-20 18:13:34.942 [main] INFO  bankApp.Account - Username: Greg, withdrawal: 10000.0
+2022-01-20 18:13:49.634 [main] INFO  bankApp.Account - Username: Greg, checking account balance
+2022-01-20 18:15:39.255 [main] INFO  bankApp.Account - Username: Adamek, checking account balance
+2022-01-20 18:16:01.524 [main] INFO  bankApp.Account - Username: Adamek, withdrawal: 6000.0
+2022-01-20 18:16:18.394 [main] INFO  bankApp.Account - Username: Adamek, checking account balance
+2022-01-20 18:16:23.808 [main] INFO  bankApp.Account - End application
+2022-01-20 18:27:58.970 [main] INFO  bankApp.Driver - Start application
+2022-01-20 18:28:47.416 [main] INFO  bankApp.Account - End application
+2022-01-20 18:29:23.300 [main] INFO  bankApp.Driver - Start application
+2022-01-20 19:49:08.340 [main] INFO  bankApp.Driver - Start application
+2022-01-20 19:50:03.410 [main] INFO  bankApp.Bank - Bank Employee: all accounts report
+2022-01-20 19:50:24.050 [main] INFO  bankApp.Bank - End application
+2022-01-20 20:03:45.223 [main] INFO  bankApp.Driver - Start application
+2022-01-20 20:04:05.743 [main] INFO  bankApp.Bank - Bank Admin: all accounts report
+2022-01-20 20:04:27.555 [main] INFO  bankApp.Bank - Bank Admin: individual accounts report for 1000
+2022-01-20 20:05:32.409 [main] INFO  bankApp.Bank - Bank Admin: update, new balance 20000.0 for account 1000
+2022-01-20 20:05:41.226 [main] INFO  bankApp.Bank - Bank Admin: all accounts report
+2022-01-20 20:06:02.088 [main] INFO  bankApp.Bank - End application
+2022-01-20 20:06:57.739 [main] INFO  bankApp.Driver - Start application
+2022-01-20 20:07:23.469 [main] INFO  bankApp.Bank - Bank Employee: all accounts report
+2022-01-20 20:07:46.604 [main] INFO  bankApp.Bank - Bank Admin: all accounts report
+2022-01-20 20:08:40.163 [main] INFO  bankApp.Bank - Bank Admin: transfer 6000.0 from account 1000 into 1007
+2022-01-20 20:08:46.617 [main] INFO  bankApp.Bank - Bank Admin: all accounts report
+2022-01-20 20:09:50.112 [main] INFO  bankApp.Menu - End application
+2022-01-20 20:11:54.339 [main] INFO  bankApp.Driver - Start application
+2022-01-20 20:12:48.775 [main] INFO  bankApp.Bank - End application
+2022-01-20 20:33:36.163 [main] INFO  bankApp.Driver - Start application
+2022-01-20 20:34:11.726 [main] INFO  bankApp.Bank - Bank Employee: all accounts report
+2022-01-20 20:47:04.200 [main] INFO  bankApp.Driver - Start application
+2022-01-20 20:47:29.724 [main] INFO  bankApp.Account - Username: Greg, checking account balance
+2022-01-20 20:49:08.288 [main] INFO  bankApp.Account - Username: Demi, checking account balance
+2022-01-20 20:49:28.953 [main] INFO  bankApp.Account - Username: Demi, deposit: added 5500.0 to the balance
+2022-01-20 20:49:35.343 [main] INFO  bankApp.Account - Username: Demi, checking account balance
+2022-01-20 20:49:55.980 [main] INFO  bankApp.Account - Username: Demi, checking account balance
+2022-01-20 20:50:33.914 [main] INFO  bankApp.Account - Username: Greg, checking account balance
+2022-01-20 20:50:42.548 [main] INFO  bankApp.Account - Username: Greg, deposit: added 5500.0 to the balance
+2022-01-20 20:50:45.417 [main] INFO  bankApp.Account - Username: Greg, checking account balance
+2022-01-20 20:51:12.105 [main] INFO  bankApp.Account - Username: Demi, checking account balance
+2022-01-20 20:51:19.687 [main] INFO  bankApp.Account - Username: Demi, deposit: added 5500.0 to the balance
+2022-01-20 20:51:28.035 [main] INFO  bankApp.Account - Username: Demi, checking account balance
+2022-01-20 20:51:33.036 [main] INFO  bankApp.Account - End application
+2022-01-20 20:58:52.524 [main] INFO  bankApp.Driver - Start application
+2022-01-20 20:59:28.098 [main] INFO  bankApp.Account - Username: Dupa, deposit: added 100.0 to the balance
+2022-01-20 20:59:30.408 [main] INFO  bankApp.Account - Username: Dupa, checking account balance
+2022-01-20 21:00:19.937 [main] INFO  bankApp.Account - Username: Greg, deposit: added 20000.0 to the balance
+2022-01-20 21:00:22.950 [main] INFO  bankApp.Account - Username: Greg, checking account balance
+2022-01-20 21:05:37.915 [main] INFO  bankApp.Account - End application
+2022-01-20 21:21:21.267 [main] INFO  bankApp.Driver - Start application
+2022-01-20 21:21:45.305 [main] INFO  bankApp.Account - Username: Pizda, checking account balance
+2022-01-20 21:21:54.652 [main] INFO  bankApp.Account - Username: Pizda, deposit: added 5500.0 to the balance
+2022-01-20 21:21:57.856 [main] INFO  bankApp.Account - Username: Pizda, checking account balance
+2022-01-20 21:22:19.128 [main] INFO  bankApp.Account - Username: Pizda, deposit: added 100.0 to the balance
+2022-01-20 21:22:39.303 [main] INFO  bankApp.Bank - Bank Admin: all accounts report
+2022-01-20 21:22:56.316 [main] INFO  bankApp.Bank - Bank Admin: deletion of account: 1012
+2022-01-20 21:23:10.885 [main] INFO  bankApp.Bank - Bank Admin: deletion of account: 1015
+2022-01-20 21:23:39.391 [main] INFO  bankApp.Bank - Bank Admin: deposit 1014.0 for account 1000
+2022-01-20 21:23:45.641 [main] INFO  bankApp.Bank - Bank Admin: deletion of account: 1014
+2022-01-20 21:24:12.722 [main] INFO  bankApp.Bank - Bank Admin: deletion of account: 1014
+2022-01-20 21:24:17.794 [main] INFO  bankApp.Bank - Bank Admin: all accounts report
+2022-01-20 21:24:33.082 [main] INFO  bankApp.Bank - End application
